@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<presentation>
+    <text name="Virksomhed" plural="Virksomheder" value="Virksomhed"/>
+    <columns>
+        <column format="heading">
+            <label>'Virksomheder'</label>
+            <value>navn</value>
+        </column>
+        <column>
+            <label>'CO-navn'</label>
+            <value>co_navn</value>
+        </column>
+        <column>
+            <label>'Adresse'</label>
+            <value>adresse + ', ' + postnummer + ' ' + postdistrikt</value>
+        </column>
+        <column>
+            <label>'Telefonnummer'</label>
+            <value>telefonnummer</value>
+        </column>
+        <column>
+            <label>'E-mail'</label>
+            <value>email</value>
+        </column>
+        <column>
+            <label>'Start dato'</label>
+            <value>startdato_pnr</value>
+        </column>
+        <column>
+            <label>'CVR-nummer'</label>
+            <value>cvrnr</value>
+        </column>
+        <column>
+            <label>'P-nummer'</label>
+            <value>p_nummer</value>
+        </column>
+        <column format="hyperlink">
+            <label>'Link til cvr'</label>
+            <value>'https://datacvr.virk.dk/data/visenhed?enhedstype=virksomhed&amp;id=' + cvrnr</value>
+        </column>
+    </columns>
+</presentation>

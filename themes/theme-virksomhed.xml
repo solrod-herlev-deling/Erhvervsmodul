@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<theme>
+    <clientlayers>
+        <clientlayer name="x">
+            <singletile>true</singletile>
+            <displayname>x</displayname>
+        </clientlayer>
+    </clientlayers>
+    <cbinfo-metadata>
+		<param name="metadata.text"><![CDATA[Virksomheder(produktionsenheder) i kommunen taget fra cvr - opdateres dagligt.]]></param>
+	</cbinfo-metadata>
+    <layer datasource="ds_produktionsenhed" name="produktionsenheder" type="point">
+	[datasource:ds_produktionsenhed.mapfile-datasource]
+		<cluster>
+			<maxdistance>20</maxdistance>
+			<region>rectangle</region>
+		</cluster>
+		<class>
+			<expression>('[Cluster:FeatureCount]' ='1')</expression>
+            <name>Virksomhed</name>
+            <style>
+                <color>150 150 255</color>
+                <size>11</size>
+                <symbol>circle</symbol>
+				<outlinecolor>44 44 44</outlinecolor>
+            </style>
+        </class>
+		<class>
+            <style>
+                <color>150 150 255</color>
+                <size>20</size>
+                <symbol>circle</symbol>
+				<outlinecolor>44 44 44</outlinecolor>
+            </style>
+			<label type="TRUETYPE">
+    			<font>arial</font>
+    			<color>"#FFFFFF"</color>
+				<force>true</force>
+    			<size>9</size>
+    			<position>cc</position>
+    			<antialias>true</antialias>
+			</label>
+        </class>
+			<labelitem>Cluster:FeatureCount</labelitem>
+    </layer>
+</theme>

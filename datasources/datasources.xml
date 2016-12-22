@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<datasources>
+    <endpoint endpointtype="mssql" name="ep_erhverv">
+        <connect>[module.emdb.endpoint.connect]</connect>
+        <user>[module.emdb.endpoint.user]</user>
+        <pwd>[module.emdb.endpoint.pwd]</pwd>
+    </endpoint>
+	<datasource displayname="produktionsenhed" endpoint="ep_erhverv" name="ds_produktionsenhed">
+g		<table geometrycolumn="GEOMETRI" name="SK_GEO_Produktionsenhed" schema="EmdbAll" pkcolumn="ObjectID">
+		</table>
+	</datasource>
+    <datasource displayname="autoværksted" endpoint="ep_erhverv" name="ds_autovaerksted">
+        <table name="SK_GEO_Produktionsenhed" schema="EmdbAll" geometrycolumn="GEOMETRI" pkcolumn="ObjectID">
+			<filter>
+				Branchekode Between 452000 and 453000
+			</filter>
+        </table>
+    </datasource>
+	
+    <datasource displayname="landbrug_skovbrug_fiskeri" endpoint="ep_erhverv" name="ds_produktionsenhed_landbrug_skovbrug_fiskeri"> <!-- A -->
+        <table name="SK_GEO_Produktionsenhed" schema="EmdbAll" geometrycolumn="GEOMETRI" pkcolumn="ObjectID">
+			<filter>
+				Branchekode Between 10000 and 32299
+			</filter>
+        </table>
+    </datasource>
+    <datasource displayname="raastofindvinding" endpoint="ep_erhverv" name="ds_produktionsenhed_raastofindvinding"> <!-- B -->
+        <table name="SK_GEO_Produktionsenhed" schema="EmdbAll" geometrycolumn="GEOMETRI" pkcolumn="ObjectID">
+			<filter>
+				Branchekode Between 33000 and 99099
+			</filter>
+        </table>
+    </datasource>
+    <datasource displayname="indistri" endpoint="ep_erhverv" name="ds_produktionsenhed_industri"> <!-- C -->
+        <table name="SK_GEO_Produktionsenhed" schema="EmdbAll" geometrycolumn="GEOMETRI" pkcolumn="ObjectID">
+			<filter>
+				Branchekode Between 100000 and 332099
+			</filter>
+        </table>
+    </datasource>
+    <datasource displayname="energiforsyning" endpoint="ep_erhverv" name="ds_produktionsenhed_energiforsyning"> <!-- D -->
+        <table name="SK_GEO_Produktionsenhed" schema="EmdbAll" geometrycolumn="GEOMETRI" pkcolumn="ObjectID">
+			<filter>
+				Branchekode Between 350000 and 353099
+			</filter>
+        </table>
+    </datasource>
+    <datasource displayname="vandforsyning_renovation" endpoint="ep_erhverv" name="ds_produktionsenhed_vandforsyning_renovation"> <!-- E -->
+        <table name="SK_GEO_Produktionsenhed" schema="EmdbAll" geometrycolumn="GEOMETRI" pkcolumn="ObjectID">
+			<filter>
+				Branchekode Between 360000 and 390099
+			</filter>
+        </table>
+    </datasource>
+    <datasource displayname="bygge_anlaeg" endpoint="ep_erhverv" name="ds_produktionsenhed_bygge_anlaeg"> <!-- F -->
+        <table name="SK_GEO_Produktionsenhed" schema="EmdbAll" geometrycolumn="GEOMETRI" pkcolumn="ObjectID">
+			<filter>
+				Branchekode Between 410000 and 433999
+			</filter>
+        </table>
+    </datasource>
+    <datasource displayname="handel" endpoint="ep_erhverv" name="ds_produktionsenhed_handel"> <!-- G -->
+        <table name="SK_GEO_Produktionsenhed" schema="EmdbAll" geometrycolumn="GEOMETRI" pkcolumn="ObjectID">
+			<filter>
+				Branchekode Between 450000 and 479999
+			</filter>
+        </table>
+    </datasource>
+    <datasource displayname="transport" endpoint="ep_erhverv" name="ds_produktionsenhed_transport"> <!-- H -->
+        <table name="SK_GEO_Produktionsenhed" schema="EmdbAll" geometrycolumn="GEOMETRI" pkcolumn="ObjectID">
+			<filter>
+				Branchekode Between 490000 and 532099
+			</filter>
+        </table>
+    </datasource>
+    <datasource displayname="hoteller_restauranter" endpoint="ep_erhverv" name="ds_produktionsenhed_hoteller_restauranter"> <!-- I -->
+        <table name="SK_GEO_Produktionsenhed" schema="EmdbAll" geometrycolumn="GEOMETRI" pkcolumn="ObjectID">
+			<filter>
+				Branchekode Between 550000 and 563099
+			</filter>
+        </table>
+    </datasource>
+    <datasource displayname="information_kommunikation" endpoint="ep_erhverv" name="ds_produktionsenhed_information_kommunikation"> <!-- J -->
+        <table name="SK_GEO_Produktionsenhed" schema="EmdbAll" geometrycolumn="GEOMETRI" pkcolumn="ObjectID">
+			<filter>
+				Branchekode Between 580000 and 639999
+			</filter>
+        </table>
+    </datasource>
+    <datasource displayname="finansiering_forsikring" endpoint="ep_erhverv" name="ds_produktionsenhed_finansiering_forsikring"> <!-- K -->
+        <table name="SK_GEO_Produktionsenhed" schema="EmdbAll" geometrycolumn="GEOMETRI" pkcolumn="ObjectID">
+			<filter>
+				Branchekode Between 640000 and 663099
+			</filter>
+        </table>
+    </datasource>
+    <datasource displayname="ejendomshandel_udlejning" endpoint="ep_erhverv" name="ds_produktionsenhed_ejendomshandel_udlejning"> <!-- L -->
+        <table name="SK_GEO_Produktionsenhed" schema="EmdbAll" geometrycolumn="GEOMETRI" pkcolumn="ObjectID">
+			<filter>
+				Branchekode Between 680000 and 682099
+			</filter>
+        </table>
+    </datasource>
+    <datasource displayname="vidensservice" endpoint="ep_erhverv" name="ds_produktionsenhed_vidensservice"> <!-- M -->
+        <table name="SK_GEO_Produktionsenhed" schema="EmdbAll" geometrycolumn="GEOMETRI" pkcolumn="ObjectID">
+			<filter>
+				Branchekode Between 690000 and 750099
+			</filter>
+        </table>
+    </datasource>
+    <datasource displayname="rejsebureau_rengoering_mv" endpoint="ep_erhverv" name="ds_produktionsenhed_rejsebureau_rengøring_mv"> <!-- N -->
+        <table name="SK_GEO_Produktionsenhed" schema="EmdbAll" geometrycolumn="GEOMETRI" pkcolumn="ObjectID">
+			<filter>
+				Branchekode Between 770000 and 829999
+			</filter>
+        </table>
+    </datasource>
+    <datasource displayname="offentlig_administration_mv" endpoint="ep_erhverv" name="ds_produktionsenhed_offentlig_administration_mv"> <!-- O -->
+        <table name="SK_GEO_Produktionsenhed" schema="EmdbAll" geometrycolumn="GEOMETRI" pkcolumn="ObjectID">
+			<filter>
+				Branchekode Between 840000 and 842599
+			</filter>
+        </table>
+    </datasource>
+    <datasource displayname="undervisning" endpoint="ep_erhverv" name="ds_produktionsenhed_undervisning"> <!-- P -->
+        <table name="SK_GEO_Produktionsenhed" schema="EmdbAll" geometrycolumn="GEOMETRI" pkcolumn="ObjectID">
+			<filter>
+				Branchekode Between 850000 and 856099
+			</filter>
+        </table>
+    </datasource>
+    <datasource displayname="sundhed_socialvaesen" endpoint="ep_erhverv" name="ds_produktionsenhed_sundhed_socialvaesen"> <!-- Q -->
+        <table name="SK_GEO_Produktionsenhed" schema="EmdbAll" geometrycolumn="GEOMETRI" pkcolumn="ObjectID">
+			<filter>
+				Branchekode Between 860000 and 889999
+			</filter>
+        </table>
+    </datasource>
+    <datasource displayname="kultur_fritid" endpoint="ep_erhverv" name="ds_produktionsenhed_kultur_fritid"> <!-- R -->
+        <table name="SK_GEO_Produktionsenhed" schema="EmdbAll" geometrycolumn="GEOMETRI" pkcolumn="ObjectID">
+			<filter>
+				Branchekode Between 900000 and 932999
+			</filter>
+        </table>
+    </datasource>
+    <datasource displayname="andre_serviceydelser_mv" endpoint="ep_erhverv" name="ds_produktionsenhed_andre_serviceydelser_mv"> <!-- S -->
+        <table name="SK_GEO_Produktionsenhed" schema="EmdbAll" geometrycolumn="GEOMETRI" pkcolumn="ObjectID">
+			<filter>
+				Branchekode Between 940000 and 990099
+			</filter>
+        </table>
+    </datasource>
+    <datasource displayname="uoplyst_aktivitet" endpoint="ep_erhverv" name="ds_produktionsenhed_uoplyst_aktivitet"> <!-- X -->
+        <table name="SK_GEO_Produktionsenhed" schema="EmdbAll" geometrycolumn="GEOMETRI" pkcolumn="ObjectID">
+			<filter>
+				Branchekode = 999999
+			</filter>
+        </table>
+    </datasource>
+</datasources>

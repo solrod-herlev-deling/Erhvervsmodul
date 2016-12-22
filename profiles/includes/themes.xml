@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<themes>
+        <theme module="erhverv" name="theme-virksomhed_uoplyst_aktivitet">
+            <themeselector>
+                <initialstate>available</initialstate>
+                <group>erhverv</group>
+                <displayname>Uoplyst aktivitet</displayname>
+                <selectable>true</selectable>
+            </themeselector>
+            <downloadable>false</downloadable>
+        </theme>
+        <theme module="erhverv" name="theme-virksomhed_andre_serviceydelser_mv">
+            <themeselector>
+                <initialstate>available</initialstate>
+                <group>erhverv</group>
+                <displayname>Andre serviceydelser mv.</displayname>
+                <selectable>true</selectable>
+            </themeselector>
+            <downloadable>false</downloadable>
+        </theme>
+        <theme module="erhverv" name="theme-virksomhed_kultur_fritid">
+            <themeselector>
+                <initialstate>available</initialstate>
+                <group>erhverv</group>
+                <displayname>Kultur og fritid</displayname>
+                <selectable>true</selectable>
+            </themeselector>
+            <downloadable>false</downloadable>
+        </theme>
+        <theme module="erhverv" name="theme-virksomhed_sundhed_socialvaesen">
+            <themeselector>
+                <initialstate>available</initialstate>
+                <group>erhverv</group>
+                <displayname>Sundheds- og socialvæsen</displayname>
+                <selectable>true</selectable>
+            </themeselector>
+            <downloadable>false</downloadable>
+        </theme>
+        <theme module="erhverv" name="theme-virksomhed_undervisning">
+            <themeselector>
+                <initialstate>available</initialstate>
+                <group>erhverv</group>
+                <displayname>Undervisning</displayname>
+                <selectable>true</selectable>
+            </themeselector>
+            <downloadable>false</downloadable>
+        </theme>
+        <theme module="erhverv" name="theme-virksomhed_offentlig_administration_mv">
+            <themeselector>
+                <initialstate>available</initialstate>
+                <group>erhverv</group>
+                <displayname>Offentlig administration mv.</displayname>
+                <selectable>true</selectable>
+            </themeselector>
+            <downloadable>false</downloadable>
+        </theme>
+        <theme module="erhverv" name="theme-virksomhed_rejsebureau_rengoering_mv">
+            <themeselector>
+                <initialstate>available</initialstate>
+                <group>erhverv</group>
+                <displayname>Rejsebureauer, rengøring mv.</displayname>
+                <selectable>true</selectable>
+            </themeselector>
+            <downloadable>false</downloadable>
+        </theme>
+        <theme module="erhverv" name="theme-virksomhed_vidensservice">
+            <themeselector>
+                <initialstate>available</initialstate>
+                <group>erhverv</group>
+                <displayname>Videndsservice</displayname>
+                <selectable>true</selectable>
+            </themeselector>
+            <downloadable>false</downloadable>
+        </theme>
+        <theme module="erhverv" name="theme-virksomhed_ejendomshandel_udlejning">
+            <themeselector>
+                <initialstate>available</initialstate>
+                <group>erhverv</group>
+                <displayname>Ejendomshandel og udlejning</displayname>
+                <selectable>true</selectable>
+            </themeselector>
+            <downloadable>false</downloadable>
+        </theme>
+        <theme module="erhverv" name="theme-virksomhed_finansiering_forsikring">
+            <themeselector>
+                <initialstate>available</initialstate>
+                <group>erhverv</group>
+                <displayname>Finansiering og forsikring</displayname>
+                <selectable>true</selectable>
+            </themeselector>
+            <downloadable>false</downloadable>
+        </theme>
+        <theme module="erhverv" name="theme-virksomhed_information_kommunikation">
+            <themeselector>
+                <initialstate>available</initialstate>
+                <group>erhverv</group>
+                <displayname>Kommunikation</displayname>
+                <selectable>true</selectable>
+            </themeselector>
+            <downloadable>false</downloadable>
+        </theme>
+        <theme module="erhverv" name="theme-virksomhed_hoteller_restauranter">
+            <themeselector>
+                <initialstate>available</initialstate>
+                <group>erhverv</group>
+                <displayname>Restauranter</displayname>
+                <selectable>true</selectable>
+            </themeselector>
+            <downloadable>false</downloadable>
+        </theme>
+        <theme module="erhverv" name="theme-virksomhed_transport">
+            <themeselector>
+                <initialstate>available</initialstate>
+                <group>erhverv</group>
+                <displayname>Transport</displayname>
+                <selectable>true</selectable>
+            </themeselector>
+            <downloadable>false</downloadable>
+        </theme>
+        <theme module="erhverv" name="theme-virksomhed_handel">
+            <themeselector>
+                <initialstate>available</initialstate>
+                <group>erhverv</group>
+                <displayname>Handel</displayname>
+                <selectable>true</selectable>
+            </themeselector>
+            <downloadable>false</downloadable>
+        </theme>
+        <theme module="erhverv" name="theme-virksomhed_bygge_anlaeg">
+            <themeselector>
+                <initialstate>available</initialstate>
+                <group>erhverv</group>
+                <displayname>Byggeri og anlæg</displayname>
+                <selectable>true</selectable>
+            </themeselector>
+            <downloadable>false</downloadable>
+        </theme>
+        <theme module="erhverv" name="theme-virksomhed_vandforsyning_renovation">
+            <themeselector>
+                <initialstate>available</initialstate>
+                <group>erhverv</group>
+                <displayname>Vandforsyning og renovation</displayname>
+                <selectable>true</selectable>
+            </themeselector>
+            <downloadable>false</downloadable>
+        </theme>
+        <theme module="erhverv" name="theme-virksomhed_energiforsyning">
+            <themeselector>
+                <initialstate>available</initialstate>
+                <group>erhverv</group>
+                <displayname>Energiforsyning</displayname>
+                <selectable>true</selectable>
+            </themeselector>
+            <downloadable>false</downloadable>
+        </theme>
+        <theme module="erhverv" name="theme-virksomhed_industri">
+            <themeselector>
+                <initialstate>available</initialstate>
+                <group>erhverv</group>
+                <displayname>Industri</displayname>
+                <selectable>true</selectable>
+            </themeselector>
+            <downloadable>false</downloadable>
+        </theme>
+        <theme module="erhverv" name="theme-virksomhed_raastofindvinding">
+            <themeselector>
+                <initialstate>available</initialstate>
+                <group>erhverv</group>
+                <displayname>Råstofindvinding</displayname>
+                <selectable>true</selectable>
+            </themeselector>
+            <downloadable>false</downloadable>
+        </theme>
+        <theme module="erhverv" name="theme-virksomhed_landbrug_skovbrug_fiskeri">
+            <themeselector>
+                <initialstate>available</initialstate>
+                <group>erhverv</group>
+                <displayname>Landbrug, skovbrug og fiskeri</displayname>
+                <selectable>true</selectable>
+            </themeselector>
+            <downloadable>false</downloadable>
+        </theme>
+        <theme module="erhverv" name="theme-autovaerksted">
+            <themeselector>
+                <initialstate>available</initialstate>
+                <group>erhverv</group>
+                <displayname>Autoværksteder</displayname>
+                <selectable>true</selectable>
+            </themeselector>
+            <downloadable>false</downloadable>
+        </theme>
+		<theme module="erhverv" name="theme-virksomhed">
+			<themeselector>
+				<initialstate>available</initialstate>
+				<group>erhverv</group>
+				<displayname>Virksomheder</displayname>
+				<selectable>true</selectable>
+			</themeselector>
+			<downloadable>false</downloadable>
+		</theme>
+</themes>

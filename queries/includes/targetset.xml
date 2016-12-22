@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<targetset>
+    <target displayname="Autoværksted"
+			name="target-autovaerksted" 
+            presentation="[module:erhverv.dir]/presentations/pres-produktionsenhed"
+			method="CommonInteriorPoint(Buffer(selector.shape_wkt,5), target.shape_wkt)"
+			extentbuffer="5"
+			condition="profilequery='info' and InList('theme-autovaerksted', layers, ' ')">
+      <datasource name="ds_autovaerksted" />
+    </target>
+	<target displayname="virksomhed"
+			name="target-virksomhed" 
+            presentation="[module:erhverv.dir]/presentations/pres-produktionsenhed"
+			method="CommonInteriorPoint(Buffer(selector.shape_wkt,5), target.shape_wkt)"
+			extentbuffer="5"
+			condition="profilequery='info' and InList('theme-virksomhed', layers, ' ')">
+      <datasource name="ds_produktionsenhed" />
+    </target>
+
+
+
+	<target displayname="Virksomhed - Landbrug, skovbrug og fiskerie"
+			name="target-virksomhed" 
+            presentation="[module:erhverv.dir]/presentations/pres-produktionsenhed"
+			method="CommonInteriorPoint(Buffer(selector.shape_wkt,5), target.shape_wkt)"
+			extentbuffer="5"
+			condition="profilequery='info' and InList('theme-virksomhed_landbrug_skovbrug_fiskeri', layers, ' ')">
+      <datasource name="ds_produktionsenhed_landbrug_skovbrug_fiskeri" />
+    </target>
+	<target displayname="virksomhed - Råstofindvinding"
+			name="target-virksomhed" 
+            presentation="[module:erhverv.dir]/presentations/pres-produktionsenhed"
+			method="CommonInteriorPoint(Buffer(selector.shape_wkt,5), target.shape_wkt)"
+			extentbuffer="5"
+			condition="profilequery='info' and InList('theme-virksomhed_raastofindvinding', layers, ' ')">
+      <datasource name="ds_produktionsenhed_raastofindvinding" />
+    </target>
+	<target displayname="virksomhed - Industri"
+			name="target-virksomhed" 
+            presentation="[module:erhverv.dir]/presentations/pres-produktionsenhed"
+			method="CommonInteriorPoint(Buffer(selector.shape_wkt,5), target.shape_wkt)"
+			extentbuffer="5"
+			condition="profilequery='info' and InList('theme-virksomhed_industri', layers, ' ')">
+      <datasource name="ds_produktionsenhed_industri" />
+    </target>
+	<target displayname="virksomhed - Energiforsyning"
+			name="target-virksomhed" 
+            presentation="[module:erhverv.dir]/presentations/pres-produktionsenhed"
+			method="CommonInteriorPoint(Buffer(selector.shape_wkt,5), target.shape_wkt)"
+			extentbuffer="5"
+			condition="profilequery='info' and InList('theme-virksomhed_energiforsyning', layers, ' ')">
+      <datasource name="ds_produktionsenhed_energiforsyning" />
+    </target>
+	<target displayname="virksomhed - Vandforsyning og renovation"
+			name="target-virksomhed" 
+            presentation="[module:erhverv.dir]/presentations/pres-produktionsenhed"
+			method="CommonInteriorPoint(Buffer(selector.shape_wkt,5), target.shape_wkt)"
+			extentbuffer="5"
+			condition="profilequery='info' and InList('theme-virksomhed_vandforsyning_renovation', layers, ' ')">
+      <datasource name="ds_produktionsenhed_vandforsyning_renovation" />
+    </target>
+	<target displayname="virksomhed - Byggeri og anlæg"
+			name="target-virksomhed" 
+            presentation="[module:erhverv.dir]/presentations/pres-produktionsenhed"
+			method="CommonInteriorPoint(Buffer(selector.shape_wkt,5), target.shape_wkt)"
+			extentbuffer="5"
+			condition="profilequery='info' and InList('theme-virksomhed_bygge_anlaeg', layers, ' ')">
+      <datasource name="ds_produktionsenhed_bygge_anlaeg" />
+    </target>
+	<target displayname="virksomhed - Handel"
+			name="target-virksomhed" 
+            presentation="[module:erhverv.dir]/presentations/pres-produktionsenhed"
+			method="CommonInteriorPoint(Buffer(selector.shape_wkt,5), target.shape_wkt)"
+			extentbuffer="5"
+			condition="profilequery='info' and InList('theme-virksomhed_handel', layers, ' ')">
+      <datasource name="ds_produktionsenhed_handel" />
+    </target>
+	<target displayname="virksomhed - Transport"
+			name="target-virksomhed" 
+            presentation="[module:erhverv.dir]/presentations/pres-produktionsenhed"
+			method="CommonInteriorPoint(Buffer(selector.shape_wkt,5), target.shape_wkt)"
+			extentbuffer="5"
+			condition="profilequery='info' and InList('theme-virksomhed_transport', layers, ' ')">
+      <datasource name="ds_produktionsenhed_transport" />
+    </target>
+	<target displayname="virksomhed - Hotel og Restaurant"
+			name="target-virksomhed" 
+            presentation="[module:erhverv.dir]/presentations/pres-produktionsenhed"
+			method="CommonInteriorPoint(Buffer(selector.shape_wkt,5), target.shape_wkt)"
+			extentbuffer="5"
+			condition="profilequery='info' and InList('theme-virksomhed_hoteller_restauranter', layers, ' ')">
+      <datasource name="ds_produktionsenhed_hoteller_restauranter" />
+    </target>
+	<target displayname="virksomhed - Information og kommunikation"
+			name="target-virksomhed" 
+            presentation="[module:erhverv.dir]/presentations/pres-produktionsenhed"
+			method="CommonInteriorPoint(Buffer(selector.shape_wkt,5), target.shape_wkt)"
+			extentbuffer="5"
+			condition="profilequery='info' and InList('theme-virksomhed_information_kommunikation', layers, ' ')">
+      <datasource name="ds_produktionsenhed_information_kommunikation" />
+    </target>
+	<target displayname="virksomhed - Finansiering og forsikring"
+			name="target-virksomhed" 
+            presentation="[module:erhverv.dir]/presentations/pres-produktionsenhed"
+			method="CommonInteriorPoint(Buffer(selector.shape_wkt,5), target.shape_wkt)"
+			extentbuffer="5"
+			condition="profilequery='info' and InList('theme-virksomhed_finansiering_forsikring', layers, ' ')">
+      <datasource name="ds_produktionsenhed_finansiering_forsikring" />
+    </target>
+	<target displayname="virksomhed - Ejendomshandel og udlejning"
+			name="target-virksomhed" 
+            presentation="[module:erhverv.dir]/presentations/pres-produktionsenhed"
+			method="CommonInteriorPoint(Buffer(selector.shape_wkt,5), target.shape_wkt)"
+			extentbuffer="5"
+			condition="profilequery='info' and InList('theme-virksomhed_ejendomshandel_udlejning', layers, ' ')">
+      <datasource name="ds_produktionsenhed_ejendomshandel_udlejning" />
+    </target>
+	<target displayname="virksomhed - Vidensservice"
+			name="target-virksomhed" 
+            presentation="[module:erhverv.dir]/presentations/pres-produktionsenhed"
+			method="CommonInteriorPoint(Buffer(selector.shape_wkt,5), target.shape_wkt)"
+			extentbuffer="5"
+			condition="profilequery='info' and InList('theme-virksomhed_vidensservice', layers, ' ')">
+      <datasource name="ds_produktionsenhed_vidensservice" />
+    </target>
+	<target displayname="virksomhed - Rejsebureau, rengøring mv."
+			name="target-virksomhed" 
+            presentation="[module:erhverv.dir]/presentations/pres-produktionsenhed"
+			method="CommonInteriorPoint(Buffer(selector.shape_wkt,5), target.shape_wkt)"
+			extentbuffer="5"
+			condition="profilequery='info' and InList('theme-virksomhed_rejsebureau_rengoering_mv', layers, ' ')">
+      <datasource name="ds_produktionsenhed_rejsebureau_rengøring_mv" />
+    </target>
+	<target displayname="virksomhed - Offentlig administration mv."
+			name="target-virksomhed" 
+            presentation="[module:erhverv.dir]/presentations/pres-produktionsenhed"
+			method="CommonInteriorPoint(Buffer(selector.shape_wkt,5), target.shape_wkt)"
+			extentbuffer="5"
+			condition="profilequery='info' and InList('theme-virksomhed_offentlig_administration_mv', layers, ' ')">
+      <datasource name="ds_produktionsenhed_offentlig_administration_mv" />
+    </target>
+	<target displayname="virksomhed - Undervisning"
+			name="target-virksomhed" 
+            presentation="[module:erhverv.dir]/presentations/pres-produktionsenhed"
+			method="CommonInteriorPoint(Buffer(selector.shape_wkt,5), target.shape_wkt)"
+			extentbuffer="5"
+			condition="profilequery='info' and InList('theme-virksomhed_undervisning', layers, ' ')">
+      <datasource name="ds_produktionsenhed_undervisning" />
+    </target>
+	<target displayname="virksomhe - Sundheds- og socialvæsen"
+			name="target-virksomhed" 
+            presentation="[module:erhverv.dir]/presentations/pres-produktionsenhed"
+			method="CommonInteriorPoint(Buffer(selector.shape_wkt,5), target.shape_wkt)"
+			extentbuffer="5"
+			condition="profilequery='info' and InList('theme-virksomhed_sundhed_socialvaesen', layers, ' ')">
+      <datasource name="ds_produktionsenhed_sundhed_socialvaesen" />
+    </target>
+	<target displayname="virksomhed - Kultur og fritid"
+			name="target-virksomhed" 
+            presentation="[module:erhverv.dir]/presentations/pres-produktionsenhed"
+			method="CommonInteriorPoint(Buffer(selector.shape_wkt,5), target.shape_wkt)"
+			extentbuffer="5"
+			condition="profilequery='info' and InList('theme-virksomhed_kultur_fritid', layers, ' ')">
+      <datasource name="ds_produktionsenhed_kultur_fritid" />
+    </target>
+	<target displayname="virksomhed - Andre serviceydelser mv."
+			name="target-virksomhed" 
+            presentation="[module:erhverv.dir]/presentations/pres-produktionsenhed"
+			method="CommonInteriorPoint(Buffer(selector.shape_wkt,5), target.shape_wkt)"
+			extentbuffer="5"
+			condition="profilequery='info' and InList('theme-virksomhed_andre_serviceydelser_mv', layers, ' ')">
+      <datasource name="ds_produktionsenhed_andre_serviceydelser_mv" />
+    </target>
+	<target displayname="virksomhed - Uoplyst aktivitet"
+			name="target-virksomhed" 
+            presentation="[module:erhverv.dir]/presentations/pres-produktionsenhed"
+			method="CommonInteriorPoint(Buffer(selector.shape_wkt,5), target.shape_wkt)"
+			extentbuffer="5"
+			condition="profilequery='info' and InList('theme-virksomhed_uoplyst_aktivitet', layers, ' ')">
+      <datasource name="ds_produktionsenhed_uoplyst_aktivitet" />
+    </target>
+
+
+
+
+
+</targetset>

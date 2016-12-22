@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<theme>
+    <clientlayers>
+        <clientlayer name="x">
+            <singletile>true</singletile>
+            <displayname>x</displayname>
+        </clientlayer>
+    </clientlayers>
+    <cbinfo-metadata>
+		<param name="metadata.text"><![CDATA[Virksomheder inden for byggeri og anlæg i kommunen taget fra cvr - opdateres dagligt.]]></param>
+	</cbinfo-metadata>
+    <layer datasource="ds_produktionsenhed_bygge_anlaeg" name="produktionsenheder" type="point">
+	[datasource:ds_produktionsenhed_bygge_anlaeg.mapfile-datasource]
+		<class>
+			<name>Byggeri og anlæg</name>
+			<style>
+					<color>217 91 183</color>
+					<size>11</size>
+					<symbol>circle</symbol>
+					<outlinecolor>44 44 44</outlinecolor>
+            </style>
+            <label type="TRUETYPE">
+				<position>auto</position>
+                <font>arialbd</font>
+                <force>true</force>
+                <antialias>true</antialias>
+                <size>8</size>
+                <color>51 51 51</color>
+				<!--backgroundshadowcolor>255 255 255</backgroundshadowcolor-->
+            </label>
+        </class>
+		<labelitem>navn</labelitem>
+        <labelmaxscale>2000</labelmaxscale>
+    </layer>
+</theme>

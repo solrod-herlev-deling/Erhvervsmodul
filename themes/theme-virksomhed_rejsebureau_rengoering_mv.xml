@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<theme>
+    <clientlayers>
+        <clientlayer name="x">
+            <singletile>true</singletile>
+            <displayname>x</displayname>
+        </clientlayer>
+    </clientlayers>
+    <cbinfo-metadata>
+		<param name="metadata.text"><![CDATA[Virksomheder inden for rejsebureau, rengøring mv. i kommunen taget fra cvr - opdateres dagligt.]]></param>
+	</cbinfo-metadata>
+    <layer datasource="ds_produktionsenhed_rejsebureau_rengøring_mv" name="produktionsenheder" type="point">
+	[datasource:ds_produktionsenhed_rejsebureau_rengøring_mv.mapfile-datasource]
+		<class>
+			<name>Rejsebureau, rengøring mv.</name>
+			<style>
+				<color>94 171 99</color>
+				<size>11</size>
+				<symbol>circle</symbol>
+				<outlinecolor>44 44 44</outlinecolor>
+            </style>
+            <label type="TRUETYPE">
+				<position>auto</position>
+                <font>arialbd</font>
+                <force>true</force>
+                <antialias>true</antialias>
+                <size>8</size>
+                <color>51 51 51</color>
+            </label>
+        </class>
+		<labelitem>navn</labelitem>
+        <labelmaxscale>2000</labelmaxscale>
+    </layer>
+</theme>

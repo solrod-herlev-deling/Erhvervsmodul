@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<theme>
+    <clientlayers>
+        <clientlayer name="x">
+            <singletile>true</singletile>
+            <displayname>x</displayname>
+        </clientlayer>
+    </clientlayers>
+    <cbinfo-metadata>
+		<param name="metadata.text"><![CDATA[Autoværksteder i kommunen taget fra cvr - opdateres dagligt. Nye autoværksteder er op til 6 måneder gamle.]]></param>
+	</cbinfo-metadata>
+    <layer datasource="ds_autovaerksted" name="autovaerksteder" type="point">
+	[datasource:ds_autovaerksted.mapfile-datasource]
+		<class>
+            <name>Autovaerksted</name>
+			<expression>'0'</expression>
+            <style>
+                <color>150 150 255</color>
+                <size>12</size>
+                <symbol>circle</symbol>
+				<outlinecolor>44 44 44</outlinecolor>
+            </style>
+        </class>
+		<class>
+			<expression>'1'</expression>
+            <name>Nyt autoværksted</name>
+            <style>
+                <color>255 150 150</color>
+                <size>12</size>
+                <symbol>circle</symbol>
+				<outlinecolor>44 44 44</outlinecolor>
+            </style>
+        </class>
+		<classitem>ny_virksomhed</classitem>
+    </layer>
+</theme>
