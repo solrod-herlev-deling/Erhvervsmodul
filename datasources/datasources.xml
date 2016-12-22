@@ -6,10 +6,10 @@
         <pwd>[module.emdb.endpoint.pwd]</pwd>
     </endpoint>
 	<datasource displayname="produktionsenhed" endpoint="ep_erhverv" name="ds_produktionsenhed">
-g		<table geometrycolumn="GEOMETRI" name="SK_GEO_Produktionsenhed" schema="EmdbAll" pkcolumn="ObjectID">
+		<table geometrycolumn="GEOMETRI" name="SK_GEO_Produktionsenhed" schema="EmdbAll" pkcolumn="ObjectID">
 		</table>
 	</datasource>
-    <datasource displayname="autoværksted" endpoint="ep_erhverv" name="ds_autovaerksted">
+    <datasource displayname="autovÃ¦rksted" endpoint="ep_erhverv" name="ds_autovaerksted">
         <table name="SK_GEO_Produktionsenhed" schema="EmdbAll" geometrycolumn="GEOMETRI" pkcolumn="ObjectID">
 			<filter>
 				Branchekode Between 452000 and 453000
@@ -108,7 +108,7 @@ g		<table geometrycolumn="GEOMETRI" name="SK_GEO_Produktionsenhed" schema="EmdbA
 			</filter>
         </table>
     </datasource>
-    <datasource displayname="rejsebureau_rengoering_mv" endpoint="ep_erhverv" name="ds_produktionsenhed_rejsebureau_rengøring_mv"> <!-- N -->
+    <datasource displayname="rejsebureau_rengoering_mv" endpoint="ep_erhverv" name="ds_produktionsenhed_rejsebureau_rengÃ¸ring_mv"> <!-- N -->
         <table name="SK_GEO_Produktionsenhed" schema="EmdbAll" geometrycolumn="GEOMETRI" pkcolumn="ObjectID">
 			<filter>
 				Branchekode Between 770000 and 829999
