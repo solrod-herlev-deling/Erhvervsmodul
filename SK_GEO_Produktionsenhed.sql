@@ -1,0 +1,61 @@
+SELECT prod.objectid, 
+       prod.kommunenummer, 
+       prod.p_nummer, 
+       prod.cvrnr, 
+       prod.navn, 
+       prod.co_navn, 
+       prod.vejkode, 
+       prod.vejnavn, 
+       prod.husnrfra, 
+       prod.husnrtil, 
+       prod.kvh_adr_key, 
+       prod.etage, 
+       prod.sidedoernr, 
+       prod.kvhx_adr_key, 
+       prod.reklammebeskyttelsekode, 
+       prod.reklammebeskyttelse, 
+       prod.adresse, 
+       prod.postnummer, 
+       prod.postdistrikt, 
+       prod.bynavn, 
+       prod.postboks, 
+       prod.adressefritekst, 
+       prod.branchekode, 
+       prod.branche, 
+       prod.bibranchekode_1, 
+       prod.bibranche_1, 
+       prod.bibranchekode_2, 
+       prod.bibranche_2, 
+       prod.bibranchekode_3, 
+       prod.bibranche_3, 
+       prod.aarsbesk_aar, 
+       prod.aarsbesk_antalansatteinterval, 
+       prod.aarsbesk_antalansatte, 
+       prod.kvarbesk_aar, 
+       prod.kvarbesk_kvartal, 
+       prod.kvarbesk_antalansatteinterval, 
+       prod.kvarbesk_antalansatte, 
+       prod.hovedafdelingkode, 
+       prod.hovedafdeling, 
+       prod.antalansvarligdeltager, 
+       prod.deltagere, 
+       prod.telefonnummer, 
+       prod.telefaxnummer, 
+       prod.email, 
+       prod.startdato_pnr, 
+       prod.opret_ts, 
+       prod.ophoer_ts, 
+       prod.mi_prinx, 
+       prod.mi_style, 
+       adr.geometri, 
+       CASE 
+         WHEN ( Datediff(day, Dateadd(month, -6, Getdate()), prod.startdato_pnr) 
+                <= 0 ) 
+       THEN 0 
+         ELSE 1 
+       END AS ny_virksomhed 
+FROM   dbo.cvr_produktionenhed AS prod 
+       LEFT OUTER JOIN dbo.geo_bbr_adgangsadresse AS adr 
+                    ON prod.kvh_adr_key = adr.kvh_adr_key 
+WHERE  ( prod.kommunenummer = 269 ) 
+       AND ( adr.geometri IS NOT NULL )  
